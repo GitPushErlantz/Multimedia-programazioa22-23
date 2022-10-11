@@ -16,7 +16,46 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         mShowCount = findViewById(R.id.show_count);
+        //Toast.makeText(this, "onCreate", Toast.LENGTH_SHORT).show();
     }
+    /*
+    //@Override
+    public void onSavedInstanceState(Bundle outState) {
+        super.onSaveInstanceState(outState);
+        //outState.putInt("count", mCount);
+    }
+
+    @Override
+    protected void onRestart() {
+        super.onRestart();
+        Toast.makeText(this, "onRestart", Toast.LENGTH_SHORT).show();
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        Toast.makeText(this, "onResume", Toast.LENGTH_SHORT).show();
+    }
+
+    @Override
+    protected void onPause() {
+        super.onPause();
+        Toast.makeText(this, "onPause", Toast.LENGTH_SHORT).show();
+    }
+
+    @Override
+    protected void onStop() {
+        super.onStop();
+        Toast.makeText(this, "onStop", Toast.LENGTH_SHORT).show();
+    }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        Toast.makeText(this, "onDestroy", Toast.LENGTH_SHORT).show();
+    }
+
+    */
 
     public void showToast(View view) {
         Toast toast = Toast.makeText(this, R.string.toast_message, Toast.LENGTH_SHORT);

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="openSite">Abrir sitio web</string>
+    <string name="openLocation">Abrir lugar</string>
+    <string name="shareText">Compartir texto</string>
+    <string name="hintOpenSite">Sitio web</string>
+    <string name="hintOpenLocation">Lugar</string>
+    <string name="hintShareText">Texto</string>
+</resources>

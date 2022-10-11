@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/tBoxSite"
+        android:layout_width="414dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="@string/hintOpenSite"
+        android:importantForAutofill="no"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.384"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/tBoxLocation"
+        android:layout_width="414dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="@string/hintOpenLocation"
+        android:importantForAutofill="no"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.384"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnSite" />
+
+    <EditText
+        android:id="@+id/tBoxShtext"
+        android:layout_width="414dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="@string/hintShareText"
+        android:importantForAutofill="no"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.384"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnLocation" />
+
+    <Button
+        android:id="@+id/btnSite"
+        android:layout_width="220dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="4dp"
+        android:onClick="showWebPage"
+        android:text="@string/openSite"
+        app:layout_constraintStart_toStartOf="@+id/tBoxSite"
+        app:layout_constraintTop_toBottomOf="@+id/tBoxSite" />
+
+    <Button
+        android:id="@+id/btnLocation"
+        android:layout_width="220dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="4dp"
+        android:onClick="showMapCaller"
+        android:text="@string/openLocation"
+        app:layout_constraintStart_toStartOf="@+id/tBoxLocation"
+        app:layout_constraintTop_toBottomOf="@+id/tBoxLocation" />
+
+    <Button
+        android:id="@+id/btnShtext"
+        android:layout_width="220dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="4dp"
+        android:hint="@string/shareText"
+        android:text="@string/shareText"
+        app:layout_constraintStart_toStartOf="@+id/tBoxShtext"
+        app:layout_constraintTop_toBottomOf="@+id/tBoxShtext" />
+</androidx.constraintlayout.widget.ConstraintLayout>

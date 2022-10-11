@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name" translatable="false">Implicit intents</string>
+    <string name="openSite">Open website</string>
+    <string name="openLocation">Open location</string>
+    <string name="shareText">Share text</string>
+    <string name="hintOpenSite">Website</string>
+    <string name="hintOpenLocation">Location</string>
+    <string name="hintShareText">Text</string>
+</resources>

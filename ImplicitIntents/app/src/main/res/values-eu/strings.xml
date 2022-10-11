@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="openSite">Ireki web-orria</string>
+    <string name="openLocation">Ireki tokia</string>
+    <string name="shareText">Partekatu testua</string>
+    <string name="hintOpenSite">Web-orria</string>
+    <string name="hintOpenLocation">Tokia</string>
+    <string name="hintShareText">Testua</string>
+</resources>
