@@ -63,7 +63,7 @@
         android:layout_width="220dp"
         android:layout_height="48dp"
         android:layout_marginTop="4dp"
-        android:onClick="showMapCaller"
+        android:onClick="showLocation"
         android:text="@string/openLocation"
         app:layout_constraintStart_toStartOf="@+id/tBoxLocation"
         app:layout_constraintTop_toBottomOf="@+id/tBoxLocation" />

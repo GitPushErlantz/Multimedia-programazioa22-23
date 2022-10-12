@@ -17,8 +17,6 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
     }
 
-
-
     public void showWebPage(View view) {
         EditText edt = (EditText) findViewById(R.id.tBoxSite);
         try {
@@ -30,24 +28,11 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
-    public void showMapCaller(View view) { //TODO: Fix maps
+    public void showLocation(View view) {
         EditText edt = (EditText) findViewById(R.id.tBoxLocation);
-        try {
-            String url = edt.getText().toString();
-            showMap(Uri.parse(url));
-        } catch (Exception e) {
-            Toast.makeText(this, "Please enter a valid place", Toast.LENGTH_SHORT).show();
-        }
+        String loc = edt.getText().toString();
+        Uri address = Uri.parse("geo:0,0?q=" + loc);
+        Intent intent = new Intent(Intent.ACTION_VIEW, address);
+        startActivity(intent);
     }
-
-    public void showMap(Uri geoLocation) { //TODO: Fix no app found
-        Intent intent = new Intent(Intent.ACTION_VIEW);
-        intent.setData(geoLocation);
-        if (intent.resolveActivity(getPackageManager()) != null) {
-            startActivity(intent);
-        } else {
-            Toast.makeText(this, "No maps app found", Toast.LENGTH_SHORT).show();
-        }
-    }
-
 }
