@@ -35,4 +35,13 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(Intent.ACTION_VIEW, address);
         startActivity(intent);
     }
+
+    public void shareText(View view) {
+        EditText edt = (EditText) findViewById(R.id.tBoxShtext);
+        String txt = edt.getText().toString();
+        Intent intent = new Intent(Intent.ACTION_SEND);
+        intent.setType("text/plain");
+        intent.putExtra(Intent.EXTRA_TEXT, txt);
+        startActivity(intent);
+    }
 }
