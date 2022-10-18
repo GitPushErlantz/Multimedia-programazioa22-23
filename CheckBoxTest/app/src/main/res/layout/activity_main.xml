@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <CheckBox
+        android:id="@+id/cbAlain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="215dp"
+        android:text="Alain"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <CheckBox
+        android:id="@+id/cbIker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Iker"
+        app:layout_constraintEnd_toEndOf="@+id/cbAlain"
+        app:layout_constraintStart_toStartOf="@+id/cbAlain"
+        app:layout_constraintTop_toBottomOf="@+id/cbAlain" />
+
+    <CheckBox
+        android:id="@+id/cbErlantz"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Erlantz"
+        app:layout_constraintEnd_toEndOf="@+id/cbKarmele"
+        app:layout_constraintStart_toStartOf="@+id/cbKarmele"
+        app:layout_constraintTop_toBottomOf="@+id/cbKarmele" />
+
+    <CheckBox
+        android:id="@+id/cbKarmele"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Karmele"
+        app:layout_constraintEnd_toEndOf="@+id/cbIker"
+        app:layout_constraintStart_toStartOf="@+id/cbIker"
+        app:layout_constraintTop_toBottomOf="@+id/cbIker" />
+
+    <Button
+        android:id="@+id/btnCheckBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Toast"
+        app:layout_constraintEnd_toEndOf="@+id/cbErlantz"
+        app:layout_constraintStart_toStartOf="@+id/cbErlantz"
+        app:layout_constraintTop_toBottomOf="@+id/cbErlantz" />
+
+    <Spinner
+        android:id="@+id/spnAukerak"
+        android:layout_width="308dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <Button
+        android:id="@+id/btnSpinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Toast"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spnAukerak" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -3,6 +3,7 @@ package com.example.communicateactivities;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.annotation.SuppressLint;
+import android.content.Intent;
 import android.os.Bundle;
 import android.widget.TextView;
 
@@ -28,5 +29,11 @@ public class receiveActivity extends AppCompatActivity {
         txtSurname.setText(surname);
         int nBatuketa = Integer.parseInt(nbat) + Integer.parseInt(nbi); //zenbakien batuketa egiteko
         txtNbatuketa.setText(Integer.toString(nBatuketa));
+    }
+    public void onBackPressed() {
+        super.onBackPressed();
+        Intent bueltatu = new Intent(receiveActivity.this, MainActivity.class);
+        setResult(RESULT_OK, null);
+        finishActivity(1);
     }
 }

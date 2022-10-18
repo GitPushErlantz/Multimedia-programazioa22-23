@@ -23,6 +23,7 @@ public class MainActivity extends AppCompatActivity {
 
         //OnClickListener bat sortu
         //Lambda ere erabili daiteke
+
         btnSend.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
