@@ -28,6 +28,10 @@ public class MainActivity extends AppCompatActivity {
         };
         ArrayAdapter<String> adapter = new ArrayAdapter<String> (this, android.R.layout.simple_spinner_item, arraySpinner);
         spnAukerak.setAdapter(adapter);
+        btnSpinner.setOnClickListener(view -> {
+            String msg = spnAukerak.getSelectedItem().toString();
+            Toast.makeText(MainActivity.this, msg, Toast.LENGTH_SHORT).show();
+        });
         btnCheckBox.setOnClickListener(view -> {
             String msg = "";
             int i = 0;
@@ -52,10 +56,6 @@ public class MainActivity extends AppCompatActivity {
             } else {
                 Toast.makeText(MainActivity.this, msg, Toast.LENGTH_SHORT).show();
             }
-        });
-        btnSpinner.setOnClickListener(view -> {
-            String msg = spnAukerak.getSelectedItem().toString();
-            Toast.makeText(MainActivity.this, msg, Toast.LENGTH_SHORT).show();
         });
     }
 }
